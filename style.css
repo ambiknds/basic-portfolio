@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* global css */
+.btn{
+    padding: 10px 15px;
+    background-color: #d65f19;
+    color: white;
+    border: 1px solid #d65f19 ;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.active{
+    background-color: #f5de89 ;
+    color: #1d1c1c;
+}
+
+/* main section */
+.main{
+    width: 100%;
+    height: 90vh;
+    background-color: #2e2e2e;
+    padding: 0 12%;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 50px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 15%;
+    height: 50px;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+}
+.logo-img{
+    width: 100%;
+}
+.socials{
+    width: 25%;
+    height: 50px;
+    /* background-color: blue; */
+}
+.socials-icons{
+    width: 100%;
+    height: 50px;
+    /* background-color: green; */
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    color: white;
+}
+
+/* maincontent */
+.main-content{
+    width: 100%;
+    padding: 30px 0;
+    /* background-color: green; */
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.introduction{
+    width: 55%;
+    padding: 20px;
+    /* background-color: white; */
+    color: white;
+}
+.name{
+    font-size: 60px;
+    color: #d65f19;
+}
+.role{
+    font-size: 20px;
+}
+.intro{
+    margin-top: 20px;
+}
+.ttm-btn{
+    margin-top: 20px;
+}
+/* portfolio image */
+.portfolio-pic{
+    width: 40%;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic{
+    width: 60%;
+    /* padding-top: 20px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    /* background-color: yellow; */
+    z-index: 10;
+  
+
+}
+.pic > img {
+    width: 100%;
+    height: 400px;
+    vertical-align: bottom;
+    border-radius: 10px;
+}
+.bg{
+    width: 60%;
+    height: 450px;
+    background-color: #d65f19;
+    transform: rotateZ(-30deg);
+    border-radius: 10px;
+}
+/* navigation sections */
+.navigation{
+    width: 100%;
+    padding: 30px 12%;
+    /* background-color: red; */
+    margin-top: -80px;
+    position: absolute;
+}
+.nav{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.nav-item{
+    width: 100px;
+    padding: 25px 0;
+    background-color: #2e2e2e;
+    font-size: 25px;
+    color: white;
+    column-gap: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .3s;
+}
+.nav-item:hover{
+    width: 250px;
+    cursor: pointer;
+}
+.nav-link{
+    width: 250px;
+    /* background-color: red; */
+    margin-left: 40px;
+}
+.nav-link > i{
+    display: inline-block;
+    color: #d65f19;
+}
+.nav-link > p{
+    display: inline-block;
+    margin-left: 60px;
+    transition: .3s;
+}
+.nav-item:hover > .nav-link > p{
+     margin-left: 10px;
+}
+
+/* content area */
+.content{
+    width: 100%;
+    padding: 30px 12%;
+    background-color: #393838;
+}
+.content-display{
+    width: 100%;
+    /* height: 300px; */
+    background-color: #2e2e2e;
+    padding: 20px 30px;
+    margin-top: 70px;
+    border-radius: 10px;
+}
+/* about me */
+.about-me{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    /* background-color: yellow; */
+    display: flex;
+    column-gap: 6%;
+    flex-wrap: wrap;
+    row-gap: 13px;
+    display: flex;
+}
+.about{
+    width: 47%;
+    padding: 20px;
+    color: white;
+    background-color: #1d1c1c;
+    border-radius: 10px;
+}
+.about>ul{
+    list-style-type: none;
+    margin-top: 10px;
+}
+.skills{
+    display: flex;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+
+}
+.skills>li{
+    padding: 10px;
+    background-color: darkgray;
+    border-radius: 10px;
+}
+
+/* services  css*/
+.services{
+    width: 100%;
+    padding: 10px 0;
+    /* background-color: yellow; */
+    display: flex;
+    column-gap: 4%;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+.service{
+    width: 22%;
+    padding: 20px;
+    background-color: #1d1c1c;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.service>h1{
+    font-size: 22px;
+}
+.service>i{
+    font-size: 100px;
+    align-items: center;
+    padding: 40px;
+}
+/* Works section */
+.works{
+    width: 100%;
+    padding: 10px 0;
+    /* background-color: yellow; */
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4%;
+    row-gap: 40px;
+}
+.work{
+    width: 22%;
+    height: 300px;
+    background-color: #1d1c1c;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.work:hover .work-overlay{
+    margin-top: 0;
+}
+
+.work-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(229,111,20,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    margin-top: 100%;
+    transition: .3s;
+}
+.work1{
+    background-image: url(images/shoe.png);
+}
+.work2{
+    background-image: url(images/shirt.png);
+}
+.work3{
+    background-image: url(images/flower-shop.png);
+}
+.work4{
+    background-image: url(images/book-shop.png);
+}
+.work5{
+    background-image: url(images/computer-shop.png);
+}
+.about-section{
+    display: none;
+}
+.services-section{
+    display: none;
+}
+.works-section{
+    display: none;
+}
