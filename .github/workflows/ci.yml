@@ -22,4 +22,3 @@ jobs:
 
       - name: Run test
         run: node test.js
-        run: node test.js
